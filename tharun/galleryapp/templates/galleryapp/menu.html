@@ -1,0 +1,78 @@
+ {% load static %}
+ <!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>hot flavs - Menu</title>
+
+<link rel="stylesheet" href="{% static 'index.css' %}">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>hot flavs</h1>
+
+</header>
+
+<nav>
+
+
+<a href="{% url 'home' %}">Home</a>
+
+<a href="{% url 'menu' %}">Menu</a>
+
+<a href="{% url 'admin' %}">Administration</a>
+
+
+<a href="{% url 'contact' %}">Contact Us</a>
+
+</nav>
+
+<section>
+
+<div class="menu">
+
+  <div class="card">
+    <img src="{% static 'galleryapp/grilled_chicken.jpg' %}" alt="Grilled Chicken">
+    <p>Grilled Chicken – ₹660</p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'galleryapp/veg_pulaw.jpg' %}" alt="Veg Pulaw">
+    <p>Veg Pulaw – ₹360</p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'galleryapp/chicken_tikka.jpg' %}" alt="Chicken Tikka">
+    <p>Chicken Tikka – ₹320</p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'galleryapp/chicken_pizza.jpg' %}" alt="Chicken Pizza">
+    <p>Chicken Pizza – ₹250</p>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'galleryapp/panneer_butter.jpg' %}" alt="Paneer Butter Masala">
+    <p>Paneer Butter Masala – ₹280</p>
+  </div>
+
+</div>
+
+</section>
+
+<footer>
+
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>hot flavs</title>
+
+<link rel="stylesheet" href="{%static 'index.css' %}">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>hot flavs</h1>
+
+</header>
+
+<nav>
+
+
+<a href="{% url 'home' %}">Home</a>
+
+<a href="{% url 'menu' %}">Menu</a>
+
+<a href="{% url 'admin' %}">Administration</a>
+
+
+<a href="{% url 'contact' %}">Contact Us</a>
+
+</nav>
+
+<section>
+
+<img src="{% static 'galleryapp/restaurant.jpg'}" alt="Restaurant Banner">
+
+
+<h2>Welcome to hot flavs</h2>
+
+<p>Authentic flavors, fresh ingredients, and a cozy dining experience.</p>
+
+</section>
+
+<footer>
+ <p> 2025 hot flavs</p>
+</footer>
+
+</body>
+
+</html>
