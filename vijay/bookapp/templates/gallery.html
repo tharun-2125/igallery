@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<div class="gallery-container">
+    <img id="galleryImage" src="{%static 'images/image1.jpg' %}" alt="Gallery Image">
+
+    <div class="buttons">
+        <button onclick="prevImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+    </div>
+</div>
+
+
+<script>
+    const images = [
+        "{% static 'images/image1.jpg' %}",
+        "{% static 'images/image2.jpg' %}",
+        "{% static 'images/image3.jpg' %}",
+        "{% static 'images/image4.jpg' %}",
+        "{% static 'images/image5.jpg' %}"
+    ];
+</script>
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
